@@ -137,7 +137,7 @@ function git_push_callback() {
 			//$repositoryPath = ABSPATH.$repo;
 			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
-			$commitMessage = 'comiting changes testingg';
+			$commitMessage = 'comiting changes test';
 
 			if (is_dir('.git')) {
 				exec("git add .");
