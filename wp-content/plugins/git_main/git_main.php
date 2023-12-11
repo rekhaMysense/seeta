@@ -164,7 +164,7 @@ function git_push_callback() {
 				exit();
 		}
 	}
-	echo "Error occured while making push."; exit();
+	echo "Error occured while making pushing."; exit();
 }
 
 include('app/app.php');
