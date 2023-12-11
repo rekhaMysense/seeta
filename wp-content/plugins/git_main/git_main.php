@@ -153,13 +153,7 @@ function git_push_callback() {
 			foreach($Output as $text){
 				$res .= '<p>'.$text.'</p>';
 			}
-			// if($ReturnCode==0){
-			// 	$res .= '<p></p>';
-			// }else{
-			// 	foreach($Output as $text){
-			// 		$res .= '<p>'.$text.'</p>';
-			// 	}
-			// }
+			
 			$res .= '</div>';
 			echo $res;
 			exit();
