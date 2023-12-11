@@ -93,7 +93,8 @@ function git_pull_callback() {
 			$repo = $linked->repo_name;
 			$branch = $linked->branch_name;
 
-			$repositoryPath = ABSPATH.$repo;
+			//$repositoryPath = ABSPATH.$repo;
+			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
 			$Command = "git pull origin {$branch}";
 			exec($Command, $Output, $ReturnCode);
