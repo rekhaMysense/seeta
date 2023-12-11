@@ -141,7 +141,7 @@ function git_push_callback() {
 
 			if (is_dir('.git')) {
 				exec("git add .");
-				exec("git commit -m {$commitMessage}");
+				exec("git commit -m '{$commitMessage}'");
 				$Command = "git push origin {$branch}";
 				exec($Command, $Output, $ReturnCode);
 					
