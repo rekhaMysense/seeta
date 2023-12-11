@@ -137,7 +137,7 @@ function git_push_callback() {
 			//$repositoryPath = ABSPATH.$repo;
 			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
-			$commitMessage = 'comiting changes testingg';
+			$commitMessage = 'comiting changes testingg 2';
 
 			if (is_dir('.git')) {
 				exec("git add .");
@@ -164,7 +164,7 @@ function git_push_callback() {
 				exit();
 		}
 	}
-	echo "Error occured while making pushing."; exit();
+	echo "Error occured while making push."; exit();
 }
 
 include('app/app.php');
