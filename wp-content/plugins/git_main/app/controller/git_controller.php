@@ -337,13 +337,19 @@ class git_controller {
 			$repoPath = ABSPATH; 
 
 			$account =$this->get_current_account();
-			
+
 			$username = $account->username;
 			$accessToken = $this->encrypt_decrypt('decrypt',$account->personal_access_token);
 			$remoteRepository = 'https://'.$username.':'.$accessToken.'@github.com/'.$username.'/'.$repo_name.'.git';
 
+			chdir($repoPath);
 			exec('git init');
-			exec("git remote add origin {$remoteRepository}");
+			if (is_dir('.git')) {
+				exec("git remote set-url origin {$remoteRepository}");
+			}else{
+				exec("git remote add origin {$remoteRepository}");
+			}
+			
 
 			//$repoPath = ABSPATH.$repo_name; 
 
