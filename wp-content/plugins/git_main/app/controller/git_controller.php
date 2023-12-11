@@ -305,6 +305,10 @@ class git_controller {
 
 			if (is_dir($repoPath)) {
 				chdir($repoPath);
+				//adding & commiting changes of current branch ...
+				exec("git add .");
+				exec("git commit -m 'Commiting changes..'");
+				//changing current branch....
 				exec("git checkout {$branch_name}",$output,$returnCode);
 			}
 

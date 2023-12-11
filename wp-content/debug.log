@@ -324,3 +324,5 @@ Stack trace:
 [11-Dec-2023 06:20:58 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 16
 [11-Dec-2023 06:22:42 UTC] PHP Warning:  chdir(): No such file or directory (errno 2) in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 53
 [11-Dec-2023 06:22:43 UTC] PHP Warning:  chdir(): No such file or directory (errno 2) in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 53
+[11-Dec-2023 06:44:23 UTC] PHP Warning:  chdir(): No such file or directory (errno 2) in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 95
+[11-Dec-2023 06:44:34 UTC] PHP Warning:  chdir(): No such file or directory (errno 2) in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 95
