@@ -51,6 +51,7 @@ jQuery('.git-push-request').on('click', function(e) {
         cache: false,
         
         success: function(html){
+          $('#pushChangesModal').modal('hide');
           $(".results-div").html(html);
         }
       });
