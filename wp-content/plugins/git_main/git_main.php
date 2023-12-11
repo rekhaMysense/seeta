@@ -140,7 +140,7 @@ function git_push_callback() {
 			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
 			//test comment
-			$commitMessage = 'comiting into main';
+			$commitMessage = $_REQUEST['commit_msg'];
 
 			if (is_dir('.git')) {
 				exec("git add .");
@@ -148,13 +148,6 @@ function git_push_callback() {
 				$Command = "git push origin {$branch}";
 				exec($Command, $Output, $ReturnCode);
 					
-			}else{
-				exec('git init');
-				exec('git add .');
-				exec("git commit -m '{$commitMessage}'");
-				exec("git remote add origin {$remoteRepository}");
-				$Command = "git push origin {$branch}";
-				exec($Command, $Output, $ReturnCode);
 			}
 			echo $ReturnCode;
 			$res =  '<div data-bs-theme="dark" class="error-div">';

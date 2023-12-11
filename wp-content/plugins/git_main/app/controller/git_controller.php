@@ -289,7 +289,8 @@ class git_controller {
 		}
 		public function activate_branch($branch_name) {
 			global $wpdb;
-			$current_account = $this->get_current_account()->id;
+			$account= $this->get_current_account();
+			$current_account = $account->id;
 			$tablename=$wpdb->prefix.'current_linked_repo';
 
 			$current_repo = $this->get_current_repo();
@@ -301,6 +302,10 @@ class git_controller {
 			}
 
 			//$repoPath = ABSPATH.$current_repo; //main
+			$username = $account->username;
+			$accessToken = $this->encrypt_decrypt('decrypt',$account->personal_access_token);
+			$remoteRepository = 'https://'.$username.':'.$accessToken.'@github.com/'.$username.'/'.$current_repo.'.git';
+
 			$repoPath = ABSPATH; 
 
 			if (is_dir($repoPath)) {
@@ -329,7 +334,8 @@ class git_controller {
 				$saveRepo =  $wpdb->insert( $tablename, $data);
 			}
 
-			$repoPath = ABSPATH.$repo_name; 
+			$repoPath = ABSPATH; 
+			//$repoPath = ABSPATH.$repo_name; 
 
 			// if (!is_dir($repoPath)) {
 			// 	if (mkdir($repoPath, 0755, true)) {
@@ -382,7 +388,9 @@ class git_controller {
 			$tablename=$wpdb->prefix.'git_accounts';
 
 			$data = array();
-			$needToUnset = array('save_account','git_nonce_field','_wp_http_referer');
+
+			$repo_name = $fields['repo_name'];
+			$needToUnset = array('save_account','git_nonce_field','_wp_http_referer','repo_name');
 			foreach($needToUnset as $noneed):
 				unset($fields[$noneed]);
 			endforeach;
@@ -410,6 +418,23 @@ class git_controller {
 				$data['personal_access_token'] = $this->encrypt_decrypt('encrypt',$data['personal_access_token']);
 				$saveSettings =  $wpdb->insert( $tablename, $data);
 				if($saveSettings){
+
+					//Initializing git repo.....
+
+					$account =$this->get_current_account();
+					$username = $account->username;
+					$accessToken = $this->encrypt_decrypt('decrypt',$account->personal_access_token);
+					$remoteRepository = 'https://'.$username.':'.$accessToken.'@github.com/'.$username.'/'.$repo_name.'.git';
+
+					$linked['repo_name']=$repo_name;
+					$linked['account_id']= $account->id;
+					$linkedTable=$wpdb->prefix.'current_linked_repo';
+					$wpdb->insert( $linkedTable, $linked);
+
+
+					exec('git init');
+					exec("git remote add origin {$remoteRepository}");
+
 					$res['type'] = 'success';
 					$res['msg'] = 'Success: Settings Saved!';
 				}

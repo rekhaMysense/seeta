@@ -39,8 +39,10 @@ jQuery('.git-pull-request').on('click', function(e) {
 
 jQuery('.git-push-request').on('click', function(e) {
     var _wpnonce = $('#wp_push_nonce').val();
+    var commit_msg = $('#commit_msg').val();
     var data = {
         action: 'git_push',
+        commit_msg:commit_msg,
         _wpnonce:_wpnonce,
     };
     $.ajax({

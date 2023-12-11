@@ -30,6 +30,10 @@ endif;
     <label for="username" class="form-label">Username</label>
     <input type="text" name="username" class="form-control" id="username" required >
   </div>
+  <div class="mb-3">
+    <label for="username" class="form-label">Repository Name</label>
+    <input type="text" name="repo_name" class="form-control" id="username" required >
+  </div>
  
   <div class="mb-3">
     <label for="pac" class="form-label">Personal access token</label>
