@@ -12,23 +12,12 @@ class git_controller {
 		/*
 		* Theme Data
 		*/
-		
 
 		function datatables_assets() {
 			wp_enqueue_style( 'datatable_style', 'https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css' );
 			wp_enqueue_script( 'datatables', 'https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js', array( 'jquery' ) );
 		}
-		function encryptData($string) {
-			$encryptedString = openssl_encrypt($string, CIPHERING, ENCRYPTION_KEY, OPTIONS, ENCRYPTION_IV);
-			//echo $encryptedString.'b';die;
-			return $encryptedString;
-		}
-		function decryptData($string) {
-			$decryptedString = openssl_decrypt($string, CIPHERING, ENCRYPTION_KEY, OPTIONS, ENCRYPTION_IV);
-			//echo $decryptedString.'b';die;
-			return $decryptedString;
-		}
-
+		
 		private function encrypt_decrypt($action, $string) {
        
 			$output = false;
@@ -43,9 +32,7 @@ class git_controller {
 			} else if( $action == 'decrypt' ) {
 				$output = openssl_decrypt(base64_decode($string), $encrypt_method, $key, 0, $iv);
 			}
-	
 			return $output;
-		   
 		}
 	
 
@@ -186,28 +173,17 @@ class git_controller {
 			exec("git commit -m '{$commitMessage}'");
 			exec("git remote add origin {$remoteRepository}");
 			$outputPush = exec('git push origin main',$output,$statuscode);
-
-			// //chdir($repositoryPath);
-			// $addRemoteCmd = "git remote set-url origin $remoteRepository";
-			// $outputAddRemote = shell_exec($addRemoteCmd);
-
-			// $addCmd = "git add .";
-			// $outputAdd = shell_exec($addCmd);
-			// print_r($outputAdd);die;
-			// $commitMessage = $post['commit_msg'];
-			// $commitCmd = "git commit -m '$commitMessage'";
-			// $outputCommit = shell_exec($commitCmd);
-			// //$remoteRepository = 'https://'.$username.':'.$accessToken.'@github.com/'.$username.'/'.$current_repo.'.git';
-			// // $remoteRepository = 'https://github.com/username/repo.git';
-
-			// // // Add the remote repository
-			//  //$addRemoteCmd = "git remote add origin $remoteRepository";
-
-		    // //$outputAddRemote = shell_exec($addRemoteCmd);
 			
-			// // Push to the master branch (you may want to change this based on your branch structure)
-			// $pushCmd = "git push -u origin main";
-			// $outputPush = shell_exec($pushCmd);
+			if ($statuscode === 0) {
+				$type = 'success';
+				$msg =  "Branch main pushed to the remote repository.";
+			}else{
+				$type = 'error';
+				$msg =  "Error pushing branch to remote repository. Command failed with return code: {$pushReturnCode}";
+			}
+
+			$this->redirect('admin.php?page=git_main_repos&msg='.$msg.'&type='.$type);
+
 			echo $statuscode;
 			print_r($outputPush);die;
 
@@ -217,7 +193,8 @@ class git_controller {
 			$username = $account->username;
 			$accessToken = $this->encrypt_decrypt('decrypt',$account->personal_access_token);
 			$current_repo = $this->get_current_repo();
-			$repositoryPath = ABSPATH.$current_repo; // Replace with the actual path to your Git repository
+		//	$repositoryPath = ABSPATH.$current_repo; // Replace with the actual path to your Git repository
+			$repositoryPath = ABSPATH; 
 			$git_url = 'https://'.$username.':'.$accessToken.'@github.com/'.$username.'/'.$current_repo.'.git';
 			$newBranchName = $post['branch_name'];
 
@@ -323,7 +300,8 @@ class git_controller {
 				$wpdb->update($tablename, $data_update, $data_where);
 			}
 
-			$repoPath = ABSPATH.$current_repo; 
+			//$repoPath = ABSPATH.$current_repo; 
+			$repoPath = ABSPATH; 
 
 			if (is_dir($repoPath)) {
 				chdir($repoPath);

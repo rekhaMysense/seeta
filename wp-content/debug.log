@@ -304,3 +304,23 @@ Stack trace:
 [08-Dec-2023 11:02:26 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 370
 [08-Dec-2023 11:04:11 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 370
 [08-Dec-2023 11:11:11 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 371
+[11-Dec-2023 05:50:51 UTC] PHP Warning:  chdir(): No such file or directory (errno 2) in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 36
+[11-Dec-2023 06:11:05 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php:114
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): git_push_callback('')
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /usr/local/var/www/wordpress/wp-admin/admin-ajax.php(188): do_action('wp_ajax_git_pus...')
+#4 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 114
+[11-Dec-2023 06:12:06 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php:114
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): git_push_callback('')
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /usr/local/var/www/wordpress/wp-admin/admin-ajax.php(188): do_action('wp_ajax_git_pus...')
+#4 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 114
+[11-Dec-2023 06:20:58 UTC] PHP Parse error:  syntax error, unexpected identifier "add_action", expecting "function" or "const" in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 16
+[11-Dec-2023 06:22:42 UTC] PHP Warning:  chdir(): No such file or directory (errno 2) in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 53
+[11-Dec-2023 06:22:43 UTC] PHP Warning:  chdir(): No such file or directory (errno 2) in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 53
