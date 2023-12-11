@@ -53,7 +53,8 @@ function get_status_callback() {
 			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
 
-			$Command = "git status -b {$branch}";
+			//$Command = "git status -b {$branch}";
+			$Command = "git status";
 			exec($Command, $Output, $ReturnCode);
 			// <button type="button" class="btn-close close-btn" aria-label="Close"></button>
 			$status =  '<div data-bs-theme="dark" class="error-div">
@@ -138,7 +139,7 @@ function git_push_callback() {
 			//$repositoryPath = ABSPATH.$repo;
 			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
-			$commitMessage = 'comiting changes testingg 2';
+			$commitMessage = 'comiting changes testingg 21';
 
 			if (is_dir('.git')) {
 				exec("git add .");
