@@ -108,8 +108,8 @@
                            $class='active';
                          }
                          ?> 
-                     <!-- <li class="list-group-item <?php echo $class; ?>"><a href="<?= $active_repo_url ?>" class="repo-anchr"><?php echo $repo['name']; ?></a></li> -->
-                     <li class="list-group-item <?php echo $class; ?>"><a href="javascript:void(0);" class="repo-anchr"><?php echo $repo['name']; ?></a></li>
+                   <li class="list-group-item <?php echo $class; ?>"><a href="<?= $active_repo_url ?>" class="repo-anchr"><?php echo $repo['name']; ?></a></li> 
+                     <!-- <li class="list-group-item <?php echo $class; ?>"><a href="javascript:void(0);" class="repo-anchr"><?php echo $repo['name']; ?></a></li> -->
                     <?php    } ?>
                   </ul>
                </div>
