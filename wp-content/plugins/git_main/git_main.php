@@ -145,20 +145,24 @@ function git_push_callback() {
 			if (is_dir('.git')) {
 				exec("git add .");
 				exec("git commit -m '{$commitMessage}'");
-				$Command = "git push origin {$branch}";
+				$Command = "git push origin {$branch}  2>&1";
 				exec($Command, $Output, $ReturnCode);
 					
 			}
-			echo $ReturnCode;
 			$res =  '<div data-bs-theme="dark" class="error-div">';
-
-					foreach($Output as $text){
-						$res .= '<p>'.$text.'</p>';
-					}
-					$res .= '</div>';
-					echo $res;
-				
-				exit();
+			foreach($Output as $text){
+				$res .= '<p>'.$text.'</p>';
+			}
+			// if($ReturnCode==0){
+			// 	$res .= '<p></p>';
+			// }else{
+			// 	foreach($Output as $text){
+			// 		$res .= '<p>'.$text.'</p>';
+			// 	}
+			// }
+			$res .= '</div>';
+			echo $res;
+			exit();
 		}
 	}
 	echo "Error occured while making pushing."; exit();
