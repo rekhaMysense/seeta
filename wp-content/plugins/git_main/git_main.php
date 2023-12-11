@@ -49,10 +49,11 @@ function get_status_callback() {
 			$repo = $linked->repo_name;
 			$branch = $linked->branch_name;
 
-			$repositoryPath = ABSPATH.$repo;
+			//$repositoryPath = ABSPATH.$repo;
+			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
 
-			$Command = "git status -b {$branch}";
+			$Command = "git status";
 			exec($Command, $Output, $ReturnCode);
 			// <button type="button" class="btn-close close-btn" aria-label="Close"></button>
 			$status =  '<div data-bs-theme="dark" class="error-div">
@@ -91,7 +92,8 @@ function git_pull_callback() {
 			$repo = $linked->repo_name;
 			$branch = $linked->branch_name;
 
-			$repositoryPath = ABSPATH.$repo;
+			//$repositoryPath = ABSPATH.$repo;
+			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
 			$Command = "git pull origin {$branch}";
 			exec($Command, $Output, $ReturnCode);
@@ -138,7 +140,7 @@ function git_push_callback() {
 			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
 			//test comment
-			$commitMessage = 'comiting 1';
+			$commitMessage = 'comiting into main';
 
 			if (is_dir('.git')) {
 				exec("git add .");
