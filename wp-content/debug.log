@@ -1,0 +1,306 @@
+[01-Dec-2023 05:56:06 UTC] PHP Fatal error:  Cannot redeclare theme_editor_load_text_domain() (previously declared in /usr/local/var/www/wordpress/wp-content/plugins/theme-editor/theme_editor.php:38) in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 36
+[01-Dec-2023 05:58:02 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "MK_THEME_EDITOR_PATH" in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php:11
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-settings.php(473): include_once()
+#1 /usr/local/var/www/wordpress/wp-config.php(97): require_once('/usr/local/var/...')
+#2 /usr/local/var/www/wordpress/wp-load.php(50): require_once('/usr/local/var/...')
+#3 /usr/local/var/www/wordpress/wp-admin/admin.php(34): require_once('/usr/local/var/...')
+#4 /usr/local/var/www/wordpress/wp-admin/plugins.php(10): require_once('/usr/local/var/...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 11
+[01-Dec-2023 05:58:03 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /usr/local/var/www/wordpress/wp-includes/functions.php on line 6031
+[01-Dec-2023 05:58:03 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /usr/local/var/www/wordpress/wp-includes/functions.php on line 6031
+[01-Dec-2023 05:58:49 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class te\app\cnt\git_main_controller does not have a method "git_main_menu_page" in /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /usr/local/var/www/wordpress/wp-admin/includes/menu.php(161): do_action('admin_menu', '')
+#3 /usr/local/var/www/wordpress/wp-admin/menu.php(417): require_once('/usr/local/var/...')
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(158): require('/usr/local/var/...')
+#5 /usr/local/var/www/wordpress/wp-admin/plugins.php(10): require_once('/usr/local/var/...')
+#6 {main}
+  thrown in /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php on line 324
+[01-Dec-2023 05:58:50 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class te\app\cnt\git_main_controller does not have a method "git_main_menu_page" in /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /usr/local/var/www/wordpress/wp-admin/includes/menu.php(161): do_action('admin_menu', '')
+#3 /usr/local/var/www/wordpress/wp-admin/menu.php(417): require_once('/usr/local/var/...')
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(158): require('/usr/local/var/...')
+#5 /usr/local/var/www/wordpress/wp-admin/plugins.php(10): require_once('/usr/local/var/...')
+#6 {main}
+  thrown in /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php on line 324
+[01-Dec-2023 05:58:52 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class te\app\cnt\git_main_controller does not have a method "git_main_menu_page" in /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /usr/local/var/www/wordpress/wp-admin/includes/menu.php(161): do_action('admin_menu', '')
+#3 /usr/local/var/www/wordpress/wp-admin/menu.php(417): require_once('/usr/local/var/...')
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(158): require('/usr/local/var/...')
+#5 /usr/local/var/www/wordpress/wp-admin/plugins.php(10): require_once('/usr/local/var/...')
+#6 {main}
+  thrown in /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php on line 324
+[01-Dec-2023 05:58:55 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class te\app\cnt\git_main_controller does not have a method "git_main_menu_page" in /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /usr/local/var/www/wordpress/wp-admin/includes/menu.php(161): do_action('admin_menu', '')
+#3 /usr/local/var/www/wordpress/wp-admin/menu.php(417): require_once('/usr/local/var/...')
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(158): require('/usr/local/var/...')
+#5 /usr/local/var/www/wordpress/wp-admin/plugins.php(10): require_once('/usr/local/var/...')
+#6 {main}
+  thrown in /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php on line 324
+[04-Dec-2023 07:11:01 UTC] PHP Warning:  include(/usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/settings.php): Failed to open stream: No such file or directory in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php on line 37
+[04-Dec-2023 07:11:01 UTC] PHP Warning:  include(): Failed opening '/usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/settings.php' for inclusion (include_path='.:/usr/local/Cellar/php@8.1/8.1.25_1/share/php@8.1/pear') in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php on line 37
+[04-Dec-2023 09:39:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method te\app\cnt\git_main_controller::sava_git_account() in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/add_account.php:5
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(28): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_add_account_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('admin_page_git_...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/add_account.php on line 5
+[04-Dec-2023 09:40:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function te\app\thm_cnt\strtootime() in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php:27
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(54): te\app\thm_cnt\git_controller->__save(Array)
+#1 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/add_account.php(5): te\app\cnt\git_main_controller->sava_git_account(Array)
+#2 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(28): include('/usr/local/var/...')
+#3 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_add_account_callback('')
+#4 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('admin_page_git_...')
+#7 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 27
+[04-Dec-2023 09:40:38 UTC] WordPress database error Unknown column 'git_nonce_field' in 'field list' for query INSERT INTO `wp_git_accounts` (`git_nonce_field`, `_wp_http_referer`, `email`, `username`, `personal_access_token`, `created`) VALUES ('de0ba957be', '/wp-admin/admin.php?page=git_add_account', 'rekha.a@truinc.in', 'rekha.1413', 'cvbv/b', '1701682838') made by do_action('admin_page_git_add_account'), WP_Hook->do_action, WP_Hook->apply_filters, te\app\cnt\git_main_controller->git_main_add_account_callback, include('/plugins/git_main/app/view/add_account.php'), te\app\cnt\git_main_controller->sava_git_account, te\app\thm_cnt\git_controller->__save
+[04-Dec-2023 09:43:56 UTC] WordPress database error Unknown column 'git_nonce_field' in 'field list' for query INSERT INTO `wp_git_accounts` (`git_nonce_field`, `_wp_http_referer`, `email`, `username`, `personal_access_token`, `created`) VALUES ('de0ba957be', '/wp-admin/admin.php?page=git_add_account', 'rekha.a@truinc.in', 'rekha.1413', 'cvbv/b', '1701683036') made by do_action('admin_page_git_add_account'), WP_Hook->do_action, WP_Hook->apply_filters, te\app\cnt\git_main_controller->git_main_add_account_callback, include('/plugins/git_main/app/view/add_account.php'), te\app\cnt\git_main_controller->sava_git_account, te\app\thm_cnt\git_controller->__save
+[04-Dec-2023 10:19:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method te\app\thm_cnt\git_controller::get_account() in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php:16
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(7): te\app\cnt\git_main_controller->init()
+#1 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/app.php(14): te\app\cnt\git_main_controller->__construct()
+#2 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/app.php(8): te\pa\git_main_app->controller()
+#3 /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php(43): te\pa\git_main_app->__construct()
+#4 /usr/local/var/www/wordpress/wp-settings.php(473): include_once('/usr/local/var/...')
+#5 /usr/local/var/www/wordpress/wp-config.php(97): require_once('/usr/local/var/...')
+#6 /usr/local/var/www/wordpress/wp-load.php(50): require_once('/usr/local/var/...')
+#7 /usr/local/var/www/wordpress/wp-admin/admin-ajax.php(22): require_once('/usr/local/var/...')
+#8 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php on line 16
+[04-Dec-2023 10:19:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method te\app\thm_cnt\git_controller::get_account() in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php:16
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(7): te\app\cnt\git_main_controller->init()
+#1 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/app.php(14): te\app\cnt\git_main_controller->__construct()
+#2 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/app.php(8): te\pa\git_main_app->controller()
+#3 /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php(43): te\pa\git_main_app->__construct()
+#4 /usr/local/var/www/wordpress/wp-settings.php(473): include_once('/usr/local/var/...')
+#5 /usr/local/var/www/wordpress/wp-config.php(97): require_once('/usr/local/var/...')
+#6 /usr/local/var/www/wordpress/wp-load.php(50): require_once('/usr/local/var/...')
+#7 /usr/local/var/www/wordpress/wp-admin/admin.php(34): require_once('/usr/local/var/...')
+#8 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php on line 16
+[04-Dec-2023 10:19:33 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /usr/local/var/www/wordpress/wp-includes/functions.php on line 6031
+[04-Dec-2023 10:19:33 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /usr/local/var/www/wordpress/wp-includes/functions.php on line 6031
+[04-Dec-2023 10:19:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function te\app\thm_cnt\wp_get_current_user() in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php:19
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(16): te\app\thm_cnt\git_controller->get_accounts()
+#1 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(7): te\app\cnt\git_main_controller->init()
+#2 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/app.php(14): te\app\cnt\git_main_controller->__construct()
+#3 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/app.php(8): te\pa\git_main_app->controller()
+#4 /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php(43): te\pa\git_main_app->__construct()
+#5 /usr/local/var/www/wordpress/wp-settings.php(473): include_once('/usr/local/var/...')
+#6 /usr/local/var/www/wordpress/wp-config.php(97): require_once('/usr/local/var/...')
+#7 /usr/local/var/www/wordpress/wp-load.php(50): require_once('/usr/local/var/...')
+#8 /usr/local/var/www/wordpress/wp-admin/admin.php(34): require_once('/usr/local/var/...')
+#9 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 19
+[04-Dec-2023 10:19:49 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /usr/local/var/www/wordpress/wp-includes/functions.php on line 6031
+[04-Dec-2023 10:19:49 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /usr/local/var/www/wordpress/wp-includes/functions.php on line 6031
+[04-Dec-2023 11:45:41 UTC] PHP Warning:  Undefined array key "database" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 490
+[04-Dec-2023 11:45:41 UTC] PHP Warning:  Undefined array key "files" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 491
+[04-Dec-2023 11:45:41 UTC] PHP Warning:  Undefined array key "plugins" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 492
+[04-Dec-2023 11:45:41 UTC] PHP Warning:  Undefined array key "themes" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 493
+[04-Dec-2023 11:45:41 UTC] PHP Warning:  Undefined array key "uploads" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 494
+[04-Dec-2023 11:45:41 UTC] PHP Warning:  Undefined array key "others" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 495
+[04-Dec-2023 11:46:45 UTC] PHP Warning:  Undefined array key "database" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 490
+[04-Dec-2023 11:46:45 UTC] PHP Warning:  Undefined array key "files" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 491
+[04-Dec-2023 11:46:45 UTC] PHP Warning:  Undefined array key "plugins" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 492
+[04-Dec-2023 11:46:45 UTC] PHP Warning:  Undefined array key "themes" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 493
+[04-Dec-2023 11:46:45 UTC] PHP Warning:  Undefined array key "uploads" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 494
+[04-Dec-2023 11:46:45 UTC] PHP Warning:  Undefined array key "others" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 495
+[04-Dec-2023 11:50:45 UTC] PHP Warning:  Undefined array key "database" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 490
+[04-Dec-2023 11:50:45 UTC] PHP Warning:  Undefined array key "files" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 491
+[04-Dec-2023 11:50:45 UTC] PHP Warning:  Undefined array key "plugins" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 492
+[04-Dec-2023 11:50:45 UTC] PHP Warning:  Undefined array key "themes" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 493
+[04-Dec-2023 11:50:45 UTC] PHP Warning:  Undefined array key "uploads" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 494
+[04-Dec-2023 11:50:45 UTC] PHP Warning:  Undefined array key "others" in /usr/local/var/www/wordpress/wp-content/plugins/wp-file-manager/file_folder_manager.php on line 495
+[05-Dec-2023 10:02:29 UTC] PHP Warning:  Array to string conversion in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php on line 59
+[05-Dec-2023 10:03:17 UTC] PHP Warning:  Array to string conversion in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php on line 59
+[05-Dec-2023 10:03:57 UTC] PHP Warning:  Array to string conversion in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php on line 59
+[05-Dec-2023 10:04:44 UTC] PHP Warning:  Attempt to read property "username" on null in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 55
+[05-Dec-2023 10:09:37 UTC] PHP Warning:  Undefined variable $type in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/account.php on line 11
+[05-Dec-2023 10:19:27 UTC] WordPress database error Unknown column 'rekha.1413' in 'where clause' for query SELECT * FROM wp_git_accounts WHERE username = rekha.1413 made by do_action('admin_page_git_add_account'), WP_Hook->do_action, WP_Hook->apply_filters, te\app\cnt\git_main_controller->git_main_add_account_callback, include('/plugins/git_main/app/view/add_account.php'), te\app\cnt\git_main_controller->sava_git_account, te\app\thm_cnt\git_controller->__save
+[05-Dec-2023 10:19:35 UTC] WordPress database error Unknown column 'rekhaMysense' in 'where clause' for query SELECT * FROM wp_git_accounts WHERE username = rekhaMysense made by do_action('admin_page_git_add_account'), WP_Hook->do_action, WP_Hook->apply_filters, te\app\cnt\git_main_controller->git_main_add_account_callback, include('/plugins/git_main/app/view/add_account.php'), te\app\cnt\git_main_controller->sava_git_account, te\app\thm_cnt\git_controller->__save
+[05-Dec-2023 10:20:43 UTC] WordPress database error Unknown column 'rekhaMysense' in 'where clause' for query SELECT * FROM wp_git_accounts WHERE username = rekhaMysense made by do_action('admin_page_git_add_account'), WP_Hook->do_action, WP_Hook->apply_filters, te\app\cnt\git_main_controller->git_main_add_account_callback, include('/plugins/git_main/app/view/add_account.php'), te\app\cnt\git_main_controller->sava_git_account, te\app\thm_cnt\git_controller->__save
+[05-Dec-2023 10:56:33 UTC] PHP Warning:  Undefined variable $wpdb in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 61
+[05-Dec-2023 10:56:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php:61
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/account.php(11): te\app\thm_cnt\git_controller->get_accounts()
+#1 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(38): include('/usr/local/var/...')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->add_git_page('')
+#3 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('toplevel_page_g...')
+#6 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 61
+[05-Dec-2023 10:57:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method te\app\thm_cnt\git_controller::redirect() in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php:86
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/account.php(7): te\app\thm_cnt\git_controller->active_account('6')
+#1 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(38): include('/usr/local/var/...')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->add_git_page('')
+#3 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('toplevel_page_g...')
+#6 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 86
+[05-Dec-2023 12:53:24 UTC] PHP Warning:  Undefined variable $repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 60
+[05-Dec-2023 12:53:24 UTC] PHP Warning:  Attempt to read property "name" on null in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 60
+[05-Dec-2023 12:54:11 UTC] PHP Warning:  Undefined variable $repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 60
+[05-Dec-2023 12:54:11 UTC] PHP Warning:  Trying to access array offset on value of type null in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 60
+[05-Dec-2023 12:55:21 UTC] PHP Parse error:  Unclosed '{' on line 55 in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 81
+[06-Dec-2023 05:13:33 UTC] PHP Parse error:  Unmatched '}' in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 60
+[06-Dec-2023 05:22:44 UTC] PHP Warning:  Undefined variable $repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 57
+[06-Dec-2023 05:22:44 UTC] PHP Warning:  Trying to access array offset on value of type null in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 57
+[06-Dec-2023 06:14:31 UTC] WordPress database error Table 'truinc.wp_wp_current_linked_repo' doesn't exist for query SELECT repo_name FROM wp_wp_current_linked_repo WHERE account_id = 5 made by do_action('github_page_git_main_repos'), WP_Hook->do_action, WP_Hook->apply_filters, te\app\cnt\git_main_controller->git_main_repos_callback, include('/plugins/git_main/app/view/repos.php'), te\app\thm_cnt\git_controller->activate_repo
+[06-Dec-2023 06:14:31 UTC] WordPress database error Table 'truinc.wp_wp_current_linked_repo' doesn't exist for query SHOW FULL COLUMNS FROM `wp_wp_current_linked_repo` made by do_action('github_page_git_main_repos'), WP_Hook->do_action, WP_Hook->apply_filters, te\app\cnt\git_main_controller->git_main_repos_callback, include('/plugins/git_main/app/view/repos.php'), te\app\thm_cnt\git_controller->activate_repo
+[06-Dec-2023 06:16:09 UTC] WordPress database error Table 'truinc.wp_wp_current_linked_repo' doesn't exist for query SELECT repo_name FROM wp_wp_current_linked_repo WHERE account_id = 5 made by do_action('github_page_git_main_repos'), WP_Hook->do_action, WP_Hook->apply_filters, te\app\cnt\git_main_controller->git_main_repos_callback, include('/plugins/git_main/app/view/repos.php'), te\app\thm_cnt\git_controller->activate_repo
+[06-Dec-2023 06:55:42 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 06:55:43 UTC] PHP Warning:  Undefined variable $branches in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 92
+[06-Dec-2023 06:56:40 UTC] PHP Warning:  Undefined variable $branches in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 92
+[06-Dec-2023 06:56:40 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 06:56:41 UTC] PHP Warning:  Undefined variable $branches in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 92
+[06-Dec-2023 06:57:30 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 07:01:28 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 07:01:43 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 07:01:46 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 07:01:49 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 07:01:51 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 07:02:28 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 07:05:27 UTC] PHP Warning:  Undefined variable $active_repo in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 15
+[06-Dec-2023 07:42:24 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:111
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 111
+[06-Dec-2023 07:42:27 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:111
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 111
+[06-Dec-2023 09:52:50 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:122
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 122
+[06-Dec-2023 09:54:09 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:122
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 122
+[06-Dec-2023 09:54:13 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:122
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 122
+[06-Dec-2023 09:54:33 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:122
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 122
+[06-Dec-2023 09:54:34 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:122
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 122
+[06-Dec-2023 09:54:48 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:122
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 122
+[06-Dec-2023 10:26:14 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php:122
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(35): include()
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#2 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#5 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php on line 122
+[07-Dec-2023 05:40:42 UTC] PHP Warning:  Undefined variable $encryptedString in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 24
+[07-Dec-2023 07:57:10 UTC] PHP Parse error:  syntax error, unexpected token "\" in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 169
+[07-Dec-2023 07:57:10 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /usr/local/var/www/wordpress/wp-includes/functions.php on line 6031
+[07-Dec-2023 07:57:10 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in /usr/local/var/www/wordpress/wp-includes/functions.php on line 6031
+[07-Dec-2023 09:40:59 UTC] PHP Warning:  chown(): Unable to find uid for www-data in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 162
+[07-Dec-2023 09:43:12 UTC] PHP Warning:  chown(): Operation not permitted in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 162
+[07-Dec-2023 10:27:01 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 315
+[07-Dec-2023 10:40:46 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 315
+[07-Dec-2023 10:45:54 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 315
+[07-Dec-2023 12:02:46 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php:39
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): get_status_callback('')
+#1 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /usr/local/var/www/wordpress/wp-admin/admin-ajax.php(188): do_action('wp_ajax_get_sta...')
+#4 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 39
+[07-Dec-2023 12:17:46 UTC] PHP Warning:  Array to string conversion in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 53
+[07-Dec-2023 12:18:15 UTC] PHP Warning:  Array to string conversion in /usr/local/var/www/wordpress/wp-content/plugins/git_main/git_main.php on line 53
+[08-Dec-2023 07:02:36 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 330
+[08-Dec-2023 07:40:55 UTC] PHP Warning:  Undefined variable $outputAdd in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 177
+[08-Dec-2023 07:40:55 UTC] PHP Deprecated:  shell_exec(): Passing null to parameter #1 ($command) of type string is deprecated in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 177
+[08-Dec-2023 07:40:55 UTC] PHP Fatal error:  Uncaught ValueError: shell_exec(): Argument #1 ($command) cannot be empty in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php:177
+Stack trace:
+#0 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php(177): shell_exec('')
+#1 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/view/repos.php(38): te\app\thm_cnt\git_controller->push_website(Array)
+#2 /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/controller.php(36): include('/usr/local/var/...')
+#3 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(324): te\app\cnt\git_main_controller->git_main_repos_callback('')
+#4 /usr/local/var/www/wordpress/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 /usr/local/var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /usr/local/var/www/wordpress/wp-admin/admin.php(259): do_action('github_page_git...')
+#7 {main}
+  thrown in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 177
+[08-Dec-2023 11:02:11 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 370
+[08-Dec-2023 11:02:26 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 370
+[08-Dec-2023 11:04:11 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 370
+[08-Dec-2023 11:11:11 UTC] PHP Warning:  Undefined variable $msg in /usr/local/var/www/wordpress/wp-content/plugins/git_main/app/controller/git_controller.php on line 371
