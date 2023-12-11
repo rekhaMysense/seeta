@@ -300,11 +300,13 @@ class git_controller {
 				$wpdb->update($tablename, $data_update, $data_where);
 			}
 
-			//$repoPath = ABSPATH.$current_repo; 
+			//$repoPath = ABSPATH.$current_repo; //mysen
 			$repoPath = ABSPATH; 
 
 			if (is_dir($repoPath)) {
 				chdir($repoPath);
+				exec("git add .");
+				exec("git commit -m 'Comiting changes before switching branch'");
 				exec("git checkout {$branch_name}",$output,$returnCode);
 			}
 
