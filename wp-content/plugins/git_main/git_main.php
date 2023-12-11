@@ -49,7 +49,8 @@ function get_status_callback() {
 			$repo = $linked->repo_name;
 			$branch = $linked->branch_name;
 
-			$repositoryPath = ABSPATH.$repo;
+			//$repositoryPath = ABSPATH.$repo;
+			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
 
 			$Command = "git status -b {$branch}";
