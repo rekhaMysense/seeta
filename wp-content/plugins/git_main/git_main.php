@@ -153,6 +153,7 @@ function git_push_callback() {
 				$Command = "git push origin {$branch}";
 				exec($Command, $Output, $ReturnCode);
 			}
+			echo $ReturnCode;
 			$res =  '<div data-bs-theme="dark" class="error-div">';
 
 					foreach($Output as $text){
