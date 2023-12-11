@@ -131,30 +131,23 @@ function git_push_callback() {
 		$linked = $wpdb->get_row( "SELECT * FROM {$wpdb->prefix}current_linked_repo WHERE account_id = {$account->id}", OBJECT );
 		
 		if($linked){
-			$username = $account->username;
-			$accessToken = encrypt_decrypt('decrypt',$account->personal_access_token);
-			$repo = $linked->repo_name;
+			//$username = $account->username;
+			//$accessToken = encrypt_decrypt('decrypt',$account->personal_access_token);
+			//$repo = $linked->repo_name;
 			$branch = $linked->branch_name;
-			$remoteRepository = 'https://'.$username.':'.$accessToken.'@github.com/'.$username.'/'.$repo.'.git';
+			//$remoteRepository = 'https://'.$username.':'.$accessToken.'@github.com/'.$username.'/'.$repo.'.git';
 
 			//$repositoryPath = ABSPATH.$repo;
 			$repositoryPath = ABSPATH;
 			chdir($repositoryPath);
-			$commitMessage = 'comiting changes testingg 21';
+			$commitMessage = $_REQUEST['commit_msg'];
 
 			if (is_dir('.git')) {
 				exec("git add .");
 				exec("git commit -m '{$commitMessage}'");
-				$Command = "git push origin {$branch}";
+				$Command = "git push origin {$branch} 2>&1";
 				exec($Command, $Output, $ReturnCode);
 					
-			}else{
-				exec('git init');
-				exec('git add .');
-				exec("git commit -m '{$commitMessage}'");
-				exec("git remote add origin {$remoteRepository}");
-				$Command = "git push origin {$branch}";
-				exec($Command, $Output, $ReturnCode);
 			}
 			$res =  '<div data-bs-theme="dark" class="error-div">';
 
